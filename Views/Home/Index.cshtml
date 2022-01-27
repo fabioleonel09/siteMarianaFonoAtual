@@ -1,0 +1,236 @@
+﻿@{
+    ViewData["Title"] = "Página Inicial";
+}
+
+<head>
+    <style>
+        .img {
+            background-size: 100% 100%;
+        }
+
+        ,
+
+        .d-flex {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    ,
+    select:invalid {
+        color: gray;
+    }
+
+    </style>
+    <style>
+	.cookieConsentContainer{
+		z-index:999;
+		width:350px;
+		min-height:20px;
+		box-sizing:border-box;
+		padding:30px 30px 30px 30px;
+		background: white;
+		overflow:hidden;
+		position:fixed;
+		bottom:30px;
+		right:30px;display:none}
+
+	.cookieConsentContainer .cookieTitle a{
+		font-family:OpenSans,arial,sans-serif;
+		color:#B22222;
+		font-size:22px;
+		line-height:20px;
+		display:block}
+
+	.cookieConsentContainer .cookieDesc p{
+		margin:0;
+		padding:0;
+		font-family:OpenSans,arial,sans-serif;
+		color:#B22222;
+		font-size:13px;
+		line-height:20px;
+		display:block;
+		margin-top:10px}
+
+	.cookieConsentContainer .cookieDesc a{
+		font-family:OpenSans,arial,sans-serif;
+		color:#B22222;
+		text-decoration:underline}
+
+	.cookieConsentContainer .cookieButton a{
+		display:inline-block;
+		font-family:OpenSans,arial,sans-serif;
+		color:white;
+		font-size:14px;
+		font-weight:700;
+		margin-top:14px;
+		background:gray;
+		box-sizing:border-box;
+		padding:15px 24px;
+		text-align:center;
+		transition:background .3s}
+	
+	.cookieConsentContainer .cookieButton a:hover{
+		cursor:pointer;
+		background:#3e9b67}
+
+	@@media (max-width:980px){
+		.cookieConsentContainer{
+		bottom:0!important;
+		left:0!important;
+		width:100%!important}}
+</style>
+</head>
+
+<body>
+    <br />
+    <a href="https://www.webcontadores.com" title="contador"><img src="https://counter7.stat.ovh/private/webcontadores.php?c=8da5mj3p966emt6q97jx93qyzjrftmz1" border="0" title="contador" alt="contador"></a> Visita (s)
+    <div class="text-center">
+        <img src="logoMarianaMaior.png" style="width: 35%; height: 55%;" />
+        <br />
+        <br />
+        <font color="#B22222" size="5"><b>Mariana Serpa: Fonoaudiologia, Audição e Equilíbrio</b></font>
+    </div>
+    <hr style="border: 1px solid #B22222;" />
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000" style="background-color: #696969;">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="equilibrio1.png" style="width: 300px; height: 200px;" alt="Visual Studio" class="img-responsive" />
+                <div class="carousel-caption" role="option">
+                    <p>
+                        <a class="btn btn-danger" style="background-color: #B22222; border: 1px solid white" asp-controller="Equilibrio" asp-action="Index">Existe um órgão responsável pelo <br />nosso equilíbrio? Saiba mais!</a>
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="zumbido.png" style="width: 300px; height: 200px;" alt="Package Management" class="img-responsive" />
+                <div class="carousel-caption" role="option">
+                    <p>
+                        <a class="btn btn-danger" style="background-color: #B22222; border: 1px solid white" asp-controller="Zumbido" asp-action="Index">Você ouve esse barulhinho <br />que estou ouvindo? Saiba mais!</a>
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="procesAudit2.png" style="width: 300px; height: 200px;" alt="Microsoft Azure" class="img-responsive" />
+                <div class="carousel-caption" role="option">
+                    <p>
+                        <a class="btn btn-danger" style="background-color: #B22222; border: 1px solid white" asp-controller="processamentoAuditivo" asp-action="Index">O processamento auditivo e o <br />aproveitamento escolar. Saiba mais!</a>
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="fotoMusico.jpg" style="width: 300px; height: 200px;" alt="Microsoft Azure" class="img-responsive" />
+                <div class="carousel-caption" role="option">
+                    <p>
+                        <a class="btn btn-danger" style="background-color: #B22222; border: 1px solid white" asp-controller="saudeAuditivaMusicos" asp-action="Index">Vamos falar um pouco sobre<br />a saúde auditiva do músico? Saiba mais!</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+    <hr style="border: 1px solid #B22222;" />
+    <div align="left">
+        <font color="#B22222">
+            <p>
+            <h4><b>&nbsp;&nbsp;Um pouco sobre mim...</b></h4>
+            </p>
+        </font>
+    </div>
+    <div class="row d-flex">
+        <img src="novaFotoMariana.jpg" style="width: 20%; height: 20%;" />
+        <div>
+            <p><label> </label></p>
+            <font color="#B22222">
+                <p>
+                <h4><b>Muito prazer, seja bem-vindo (a)!</b></h4>
+                </p>
+            </font>
+            <p>Sou <b>Mariana Serpa</b>, graduada há uma década em Fonoaudiologia <b>(CRFa 6 - 8816)</b> pela Faculdade de Estudos Administrativos (FEAD),</p>
+            <p>pós-graduada em Audiologia pelo FONOHOSP/INCISA, aperfeiçoamento em reabilitação vestibular pela clínica Trumbull Physical,</p>
+            <p>habilitada em avaliação e reabilitação vestibular pelo American Institute of the Balance. Experiências nas áreas de</p>
+            <p>audiologia clínica, reabilitação vestibular, terapia do zumbido e hipersensibilidade, avaliação e terapia do processamento</p>
+            <p>auditivo e saúde auditiva dos músicos. O consultório é a realização de um sonho; poder contribuir para melhor qualidade de</p>
+            <p>vida das pessoas, visando desenvolver atendimentos personalizados e exclusivo para cada paciente. Minha satisfação</p>
+            <p>é ver a recuperação e alegria no rosto de cada paciente.</p>
+        </div>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <img src="fotoSala.jpg" style="width: 40%; height: 40%;" />
+    </div>
+    <br />
+    <br />
+    <script>
+        var purecookieTitle = "Cookies.",
+            purecookieDesc = "Para usar este site, você automaticamente autoriza o uso de cookies.",
+            purecookieLink = '<a href="https://www.cssscript.com/privacy-policy/" target="_blank">Sobre?</a>',
+            purecookieButton = "Eu concordo!";
+
+        function pureFadeIn(e, o) {
+            var i = document.getElementById(e);
+            i.style.opacity = 0, i.style.display = o || "block",
+                function e() {
+                    var o = parseFloat(i.style.opacity);
+                    (o += .02) > 1 || (i.style.opacity = o, requestAnimationFrame(e))
+                }()
+        }
+
+        function pureFadeOut(e) {
+            var o = document.getElementById(e);
+            o.style.opacity = 1,
+                function e() {
+                    (o.style.opacity -= .02) < 0 ? o.style.display = "none" : requestAnimationFrame(e)
+                }()
+        }
+
+        function setCookie(e, o, i) {
+            var t = "";
+            if (i) {
+                var n = new Date;
+                n.setTime(n.getTime() + 24 * i * 60 * 60 * 1e3), t = "; expires=" + n.toUTCString()
+            }
+            document.cookie = e + "=" + (o || "") + t + "; path=/"
+        }
+
+        function getCookie(e) {
+            for (var o = e + "=", i = document.cookie.split(";"), t = 0; t < i.length; t++) {
+                for (var n = i[t];
+                    " " == n.charAt(0);) n = n.substring(1, n.length);
+                if (0 == n.indexOf(o)) return n.substring(o.length, n.length)
+            }
+            return null
+        }
+
+        function eraseCookie(e) {
+            document.cookie = e + "=; Max-Age=-99999999;"
+        }
+
+        function cookieConsent() {
+            getCookie("purecookieDismiss") || (document.body.innerHTML += '<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle"><a>' + purecookieTitle +
+                '</a></div><div class="cookieDesc"><p>' + purecookieDesc + " " + purecookieLink + '</p></div><div class="cookieButton"><a onClick="purecookieDismiss();">' + purecookieButton + "</a></div></div>",
+                pureFadeIn("cookieConsentContainer"))
+        }
+
+        function purecookieDismiss() {
+            setCookie("purecookieDismiss", "1", 1), pureFadeOut("cookieConsentContainer")
+        }
+        window.onload = function() {
+            cookieConsent()
+        };
+    </script>
+</body>
+<br />
+

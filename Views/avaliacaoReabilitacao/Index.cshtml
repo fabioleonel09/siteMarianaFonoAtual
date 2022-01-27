@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Avaliação/Reabilitação";
+}
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style>
+        .wrapper {
+            display: grid;
+            grid-template-columns: 228px 228px 228px 228px 228px;
+        },
+
+        .btnColor {
+            back-color: #A52A2A;
+        }
+    </style>
+</head>
+<body style="background-color: #FFFAFA;">
+    <div class="text-center">
+        <h3>
+            <font color="#B22222"><b>Avaliação e Reabilitação</b></font>
+        </h3>
+    </div>
+    <hr style="border: 1px solid #B22222;" />
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="4000" style="background-color: #696969;">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="principalEquilibrio.png" style="width: 50%; height: 40%;" alt="Visual Studio" class="img-responsive" />
+                <div class="carousel-caption" role="option">
+                    <p>
+                        <a class="btn btn-danger" style="background-color: #B22222; border: 1px solid white" asp-area="" asp-controller="Equilibrio" asp-action="Index"><span class="glyphicon glyphicon-repeat"></span> do Equilíbrio</a>
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="principalZumbido.png" style="width: 50%; height: 40%;" alt="Package Management" class="img-responsive" />
+                <div class="carousel-caption" role="option">
+                    <p>
+                        <a class="btn btn-danger" style="background-color: #B22222; border: 1px solid white" asp-area="" asp-controller="Zumbido" asp-action="Index"><span class="glyphicon glyphicon-volume-up"></span> do Zumbido</a>
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="principalProcesAudit.png" style="width: 50%; height: 40%;" alt="Microsoft Azure" class="img-responsive" />
+                <div class="carousel-caption" role="option">
+                    <p>
+                        <a class="btn btn-danger" style="background-color: #B22222; border: 1px solid white" asp-area="" asp-controller="processamentoAuditivo" asp-action="Index"><span class="glyphicon glyphicon-headphones"></span> do Processamento<br />Auditivo</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+    <hr style="border: 1px solid #B22222;" />
+</body>
+<br />
+<br />
+<br />
+<br />
+<br />
+

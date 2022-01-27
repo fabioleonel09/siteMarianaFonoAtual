@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Mariana Serpa</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <style>
+        .d-flex {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        ,
+
+        select:invalid {
+            color: gray;
+        }
+
+        .form div {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        ,
+
+        .d-flex2 {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        ,
+
+        .fontHeader {
+            font-color: #A52A2A;
+            font-style: bold;
+        }
+        
+        ,
+
+        .linha-vertical {
+            height: 500px;
+            border-left: 2px solid;
+        }
+    </style>
+</head>
+<body style="background-color: #FFFAFA; background-repeat: no-repeat; background-position: 300px 300px; background-attachment: fixed;">
+    <header>
+        <nav class="navbar navbar-mobile navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3" style="position: relative; background-color: #DCDCDC;">
+            <div class="container">               
+                    <div class="navbar-collapse collapse" >                   
+                        <ul class=" nav navbar-nav">
+                            <li class="text-center;" >
+                                <a style="color: #B22222; font-size: 18pt; border: 2px solid; border-radius: 15px;" href="#" class="dropdown-toggle" data-toggle="dropdown"><b><span class="glyphicon glyphicon-menu-hamburger"></span> </b></a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a style="color: #B22222;" class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"> Página inicial</a>
+                                    </li>
+                                    <br />
+                                    <hr/>
+                                    <li>
+                                        <a style="color: #B22222;" class="navbar-brand" asp-area="" asp-controller="avaliacaoReabilitacao" asp-action="Index">Avaliação e reabilitação</a>
+                                    </li>
+                                    <br />
+                                    <hr/>
+                                    <li>
+                                        <a style="color: #B22222;" class="navbar-brand" asp-area="" asp-controller="saudeAuditivaMusicos" asp-action="Index">Saúde auditiva para músicos</a>
+                                    </li>
+                                    <br />
+                                    <hr/>
+                                    <li>
+                                        <a style="color: #B22222;" class="navbar-brand" asp-area="" asp-controller="cursosSupervisoes" asp-action="Index">Cursos e supervisões</a>
+                                    </li>
+                                    <br />
+                                    <hr/>
+                                    <li>
+                                        <a style="color: #B22222;" class="navbar-brand" asp-area="" asp-controller="depoimentos" asp-action="Index">Depoimentos</a>
+                                    </li>
+                                    <br />
+                                    <hr/>
+                                    <li>
+                                        <a style="color: #B22222;" class="navbar-brand" asp-area="" asp-controller="Contato" asp-action="Index">Fale comigo!</a>
+                                    </li>
+                                    <br />
+                                    <hr/>
+                                </ul>
+                            </li>                                                             
+                        </ul>          
+                    </div>          
+                </div>               
+           </nav>
+    </header>
+    <img src="logoMarianaMaior.png" style="width: 15%; height: 35%; border-radius: 5px;" />
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted" style="background-color: #B22222;">
+        <div class="container" align="left">
+          <i><font color="white">Desenvolvido por </font><a href="https://www.instagram.com/sistemaslua/"><font color="white"><b>@@sistemaslua</b></font></a>. <font color="white">Todos os direitos reservados.</font></i><font color="white">&copy; 2022 - </font><a asp-area="" asp-controller="Home" asp-action="Index"><font color="white"><b>Página Inicial</b></font></a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>

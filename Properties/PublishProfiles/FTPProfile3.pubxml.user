@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project>
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAAB3fjfGUVEqVA0l9GuN2hQAAAAACAAAAAAAQZgAAAAEAACAAAACkAa4cvM1B6CHxsxaFE1aSHwfQuXRpUieNLZTC4hCReAAAAAAOgAAAAAIAACAAAACqqhxLDrOTzuVszDZ4ZhmwAM/pSJXM/XUB8Qu6Si/BDCAAAAC5BCH/BgROyNMnVgk1g8+hHpEBNcs881RmT0UJKrHPGEAAAACZLGP7qcswRlF22w8MomAquwE7IA+8oe0s4t11BP9E1DghVx8IFVv60Z9sgHPAT+rAsfflQ43Bi6IlbRNjXS3Z</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ftp.marianaserpa.com/public_html/</_PublishTargetUrl>
+    <History>False|2022-01-19T01:14:03.1732869Z;</History>
+  </PropertyGroup>
+</Project>
