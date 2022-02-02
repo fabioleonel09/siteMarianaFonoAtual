@@ -50,6 +50,7 @@ C:\Users\Meus documentos\Desktop\fonoaudiologiaMariana\obj\Release\net5.0\PubTmp
 C:\Users\Meus documentos\Desktop\fonoaudiologiaMariana\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery\dist\jquery.min.js
 C:\Users\Meus documentos\Desktop\fonoaudiologiaMariana\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery\dist\jquery.min.map
 C:\Users\Meus documentos\Desktop\fonoaudiologiaMariana\obj\Release\net5.0\PubTmp\Out\wwwroot\lib\jquery\LICENSE.txt
+C:\Users\Meus documentos\Desktop\fonoaudiologiaMariana\obj\Release\net5.0\PubTmp\Out\wwwroot\localizacaoConsultorio.png
 C:\Users\Meus documentos\Desktop\fonoaudiologiaMariana\obj\Release\net5.0\PubTmp\Out\wwwroot\logoMarianaMaior.png
 C:\Users\Meus documentos\Desktop\fonoaudiologiaMariana\obj\Release\net5.0\PubTmp\Out\wwwroot\novaFotoMariana.jpg
 C:\Users\Meus documentos\Desktop\fonoaudiologiaMariana\obj\Release\net5.0\PubTmp\Out\wwwroot\paginaProcesAudit.jpg
